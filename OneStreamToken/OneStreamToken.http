@@ -1,0 +1,6 @@
+@OneStreamToken_HostAddress = http://localhost:5007
+
+GET {{OneStreamToken_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

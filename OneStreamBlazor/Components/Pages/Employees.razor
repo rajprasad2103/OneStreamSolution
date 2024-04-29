@@ -1,0 +1,32 @@
+﻿@page "/employees"
+@inherits EmployeesBase
+
+<PageTitle>Employees</PageTitle>
+
+<h3>Employees</h3>
+
+@if (EmployeesDispaly != null)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Depart Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var employee in EmployeesDispaly)
+            {
+                <tr>
+                    <td>@employee.Id</td>
+                    <td>@employee.Name</td>
+                    <td>@employee.Age</td>
+                    <td>@employee.DepartName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+}

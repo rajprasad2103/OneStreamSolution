@@ -1,0 +1,6 @@
+@OneStreamAPI2_HostAddress = http://localhost:5182
+
+GET {{OneStreamAPI2_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
